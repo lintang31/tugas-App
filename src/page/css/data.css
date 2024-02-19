@@ -1,0 +1,85 @@
+/* Reset style list bawaan */
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Menambahkan style pada tag li */
+li {
+  background-color: #f9f9f9;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 3px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Menambahkan style pada div di dalam tag li */
+li div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+/* Menambahkan style pada span di dalam div */
+li div span {
+  font-size: 16px;
+  font-weight: 400;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+/* Menambahkan style pada tag strong di dalam span */
+li div span strong {
+  margin-right: 10px;
+  font-weight: 700;
+}
+
+/* Menambahkan style pada button di dalam tag li */
+li button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 3px;
+  transition: 0.3s;
+  margin-top: 5px;
+}
+
+/* Menambahkan style pada button dengan class edit */
+li button.edit {
+  background-color: green;
+  margin-right: 5px;
+}
+
+/* Menambahkan style pada button dengan class delete */
+li button.delete {
+  background-color: #dc3545;
+}
+
+/* Menambahkan efek hover pada button */
+li button:hover {
+  background-color: darken(#007bff, 10%);
+}
+
+/* Menambahkan efek hover pada button dengan class delete */
+li button.delete:hover {
+  background-color: darken(#dc3545, 10%);
+}
+
+/* Menambahkan media query untuk tampilan mobile */
+@media (max-width: 768px) {
+  li {
+    flex-direction: column;
+  }
+
+  li button {
+    margin-top: 10px;
+  }
+}

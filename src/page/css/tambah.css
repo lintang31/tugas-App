@@ -1,0 +1,49 @@
+/* AddStudentForm.css */
+
+.form-container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.input-container {
+  margin-bottom: 20px;
+}
+
+.input-container input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.input-container input[type="text"]:focus {
+  outline: none;
+  border-color: #218838; /* Warna hijau untuk fokus */
+}
+
+.input-container input[type="text"]::placeholder {
+  color: #aaa; /* Warna placeholder */
+}
+
+.submit-container {
+  text-align: center;
+}
+
+.submit-container button[type="submit"] {
+  background-color: #28a745; /* Warna hijau */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.submit-container button[type="submit"]:hover {
+  background-color: #218838; /* Warna hijau yang sedikit lebih gelap saat dihover */
+}
